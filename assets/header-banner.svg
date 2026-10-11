@@ -1,124 +1,315 @@
-<svg width="100%" height="210" viewBox="0 0 900 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="280" viewBox="0 0 1000 280" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Background Ambient Gradients -->
+    <radialGradient id="meshGlow" cx="690" cy="140" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.16" />
+      <stop offset="45%" stop-color="#4F46E5" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#06090F" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Name Text Subtle Gradient -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Edge Data Flow Gradients -->
+    <linearGradient id="edgeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="edgeGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="edgeGrad3" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#34D399" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Animated Shimmer Gradient for Bottom Edge -->
+    <linearGradient id="shimmerBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0">
+        <animate attributeName="offset" values="0;0.5;1" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8">
+        <animate attributeName="offset" values="0.15;0.65;1" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="65%" stop-color="#818CF8" stop-opacity="0">
+        <animate attributeName="offset" values="0.3;0.8;1" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Technical Dot Grid Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="0.75" fill="#334155" fill-opacity="0.35" />
+    </pattern>
+
     <style>
-      .mono-meta {
-        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, monospace;
-        font-size: 9.5px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        fill: #64748B;
-      }
-      .mono-accent {
-        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, monospace;
+      .mono-kicker {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
         font-size: 10px;
         font-weight: 600;
         letter-spacing: 2px;
         text-transform: uppercase;
-        fill: #38BDF8;
-      }
-      .name {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-        font-size: 32px;
-        font-weight: 700;
-        letter-spacing: -0.6px;
-        fill: #F8FAFC;
-      }
-      .role {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-        font-size: 13.5px;
-        font-weight: 500;
-        letter-spacing: 0.1px;
-        fill: #94A3B8;
-      }
-      .statement {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-        font-size: 15.5px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: -0.15px;
-        fill: #E2E8F0;
-      }
-      .table-label {
-        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, monospace;
-        font-size: 9px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
         fill: #64748B;
       }
-      .table-value {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif;
-        font-size: 11.5px;
+      .name-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: -1.2px;
+        fill: url(#nameGrad);
+      }
+      .role-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
+        font-size: 15px;
         font-weight: 500;
+        letter-spacing: -0.1px;
+        fill: #94A3B8;
+      }
+      .statement-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'Segoe UI', sans-serif;
+        font-size: 13.5px;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        fill: #64748B;
+      }
+      .badge-label {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, monospace;
+        font-size: 9.5px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
         fill: #CBD5E1;
       }
-      .table-value-accent {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 11px;
+      .graph-meta {
+        font-family: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+        font-size: 8.5px;
         font-weight: 500;
-        fill: #38BDF8;
-      }
-      .interpunct {
-        fill: #38BDF8;
+        letter-spacing: 1px;
+        fill: #475569;
       }
     </style>
   </defs>
 
-  <!-- Editorial Charcoal Canvas -->
-  <rect x="0.5" y="0.5" width="899" height="209" rx="4" fill="#0C1017" stroke="#1E293B" stroke-width="1" />
+  <!-- Deep Obsidian Architectural Canvas -->
+  <rect x="0.5" y="0.5" width="999" height="279" rx="8" fill="#070A10" stroke="#1E293B" stroke-width="1" />
 
-  <!-- Top Frame Registration Crosshairs -->
+  <!-- Ambient Light Field behind Graph -->
+  <rect x="460" y="1" width="538" height="278" rx="8" fill="url(#meshGlow)" />
+
+  <!-- Technical Precision Dot Grid (Constrained to Right Graph Zone) -->
+  <rect x="480" y="16" width="490" height="248" fill="url(#dotGrid)" />
+
+  <!-- ================================================================= -->
+  <!-- LEFT COLUMN: Identity, Typography, and Core Focus                 -->
+  <!-- ================================================================= -->
+  <g transform="translate(48, 0)">
+    
+    <!-- Status Beacon / Top Kicker -->
+    <g transform="translate(0, 48)">
+      <!-- Beacon Halo Pulse -->
+      <circle cx="5" cy="5" r="5" fill="#10B981" opacity="0.2">
+        <animate attributeName="r" values="5;10;5" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4;0.05;0.4" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <!-- Core Beacon Dot -->
+      <circle cx="5" cy="5" r="3.5" fill="#10B981">
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="22" y="8.5" class="mono-kicker">ENGINEERING &amp; RESEARCH <tspan fill="#38BDF8">·</tspan> 2026</text>
+    </g>
+
+    <!-- Main Name -->
+    <text x="0" y="108" class="name-text">Nikhil Singh</text>
+
+    <!-- Role Definition -->
+    <text x="0" y="142" class="role-text">AI &amp; ML Student <tspan fill="#38BDF8">·</tspan> Software Developer <tspan fill="#38BDF8">·</tspan> Open-Source Contributor</text>
+
+    <!-- Mission Statement -->
+    <text x="0" y="172" class="statement-text">Building practical software, solving algorithmic problems,</text>
+    <text x="0" y="192" class="statement-text">and contributing to open source.</text>
+
+    <!-- Architectural Focus Badges -->
+    <g transform="translate(0, 222)">
+      <!-- Badge 1: C++ / DSA -->
+      <rect x="0" y="0" width="112" height="26" rx="4" fill="#0B1324" stroke="#1E293B" stroke-width="1" />
+      <circle cx="12" cy="13" r="2.5" fill="#38BDF8" />
+      <text x="22" y="17" class="badge-label">C++ · DSA</text>
+
+      <!-- Badge 2: AI / ML Systems -->
+      <rect x="122" y="0" width="138" height="26" rx="4" fill="#0B1324" stroke="#1E293B" stroke-width="1" />
+      <circle cx="134" cy="13" r="2.5" fill="#818CF8" />
+      <text x="144" y="17" class="badge-label">AI/ML SYSTEMS</text>
+
+      <!-- Badge 3: Open Source -->
+      <rect x="270" y="0" width="128" height="26" rx="4" fill="#0B1324" stroke="#1E293B" stroke-width="1" />
+      <circle cx="282" cy="13" r="2.5" fill="#34D399" />
+      <text x="292" y="17" class="badge-label">OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT SIDE: Signature Computational Geometry & Living Flow System -->
+  <!-- ================================================================= -->
+  <g id="computational-geometry" transform="translate(480, 0)">
+    
+    <!-- Concentric Algorithmic Reticles Centered Exactly on Core Nexus (210, 140) -->
+    <g transform="translate(210, 140)">
+      <!-- Outer Dial Ring (Rotating Slow Clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="100s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 7" opacity="0.55" />
+        <circle cx="105" cy="0" r="2" fill="#38BDF8" opacity="0.7" />
+        <circle cx="-105" cy="0" r="1.5" fill="#818CF8" opacity="0.5" />
+      </g>
+      <!-- Mid Coordinate Ring (Rotating Slow Counter-Clockwise) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="80s" repeatCount="indefinite" />
+        <circle cx="0" cy="0" r="72" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-dasharray="2 5" opacity="0.45" />
+        <circle cx="0" cy="72" r="1.5" fill="#34D399" opacity="0.6" />
+      </g>
+      <!-- Stationary Precision Crosshairs -->
+      <line x1="-115" y1="0" x2="-95" y2="0" stroke="#334155" stroke-width="1" />
+      <line x1="95" y1="0" x2="115" y2="0" stroke="#334155" stroke-width="1" />
+      <line x1="0" y1="-115" x2="0" y2="-95" stroke="#334155" stroke-width="1" />
+      <line x1="0" y1="95" x2="0" y2="115" stroke="#334155" stroke-width="1" />
+    </g>
+
+    <!-- Algorithmic Graph Paths (DAG & Data Flow) -->
+    <!-- Primary Sigmoid Flow 1: (60, 70) -> (210, 140) -> (380, 80) -->
+    <path id="pathAlpha" d="M 60 70 C 130 70, 150 140, 210 140 S 310 80, 380 80" fill="none" stroke="url(#edgeGrad1)" stroke-width="1.5" />
+
+    <!-- Primary Sigmoid Flow 2: (60, 210) -> (210, 140) -> (390, 190) -->
+    <path id="pathBeta" d="M 60 210 C 120 210, 160 140, 210 140 S 320 190, 390 190" fill="none" stroke="url(#edgeGrad2)" stroke-width="1.5" />
+
+    <!-- Horizontal Backbone Flow: (210, 140) -> (430, 140) -->
+    <path id="pathDelta" d="M 210 140 L 430 140" fill="none" stroke="url(#edgeGrad3)" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.5" />
+
+    <!-- Cross Diagonal Flow: (110, 140) -> (310, 70) -->
+    <path id="pathGamma" d="M 110 140 Q 210 90, 310 70" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 4" opacity="0.25" />
+
+    <!-- Structural Framing Struts -->
+    <path d="M 60 70 L 110 140 L 60 210" fill="none" stroke="#1E293B" stroke-width="1" />
+    <path d="M 310 70 L 380 80 L 430 140 L 390 190" fill="none" stroke="#1E293B" stroke-width="1" />
+
+    <!-- ================================================================= -->
+    <!-- ANIMATED DATA PACKETS (SMIL animateMotion along actual paths)     -->
+    <!-- Initial position set to path origin + opacity 0 to prevent drift  -->
+    <!-- ================================================================= -->
+    
+    <!-- Packet 1: Glides along Path Alpha (Cyan) -->
+    <circle cx="60" cy="70" r="3" fill="#38BDF8" opacity="0">
+      <animateMotion dur="5.5s" repeatCount="indefinite" path="M 0 0 C 70 0, 90 70, 150 70 S 250 10, 320 10" />
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Packet 2: Glides along Path Alpha (Secondary Phase Shift) -->
+    <circle cx="60" cy="70" r="2.5" fill="#67E8F9" opacity="0">
+      <animateMotion dur="5.5s" begin="2.75s" repeatCount="indefinite" path="M 0 0 C 70 0, 90 70, 150 70 S 250 10, 320 10" />
+      <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="5.5s" begin="2.75s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Packet 3: Glides along Path Beta (Violet) -->
+    <circle cx="60" cy="210" r="3" fill="#818CF8" opacity="0">
+      <animateMotion dur="6s" begin="1.2s" repeatCount="indefinite" path="M 0 0 C 60 0, 100 -70, 150 -70 S 260 -20, 330 -20" />
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="6s" begin="1.2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Packet 4: Glides along Horizontal Backbone (Emerald / Dispatch) -->
+    <circle cx="210" cy="140" r="2.5" fill="#34D399" opacity="0">
+      <animateMotion dur="4s" begin="0.5s" repeatCount="indefinite" path="M 0 0 L 220 0" />
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="4s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- ================================================================= -->
+    <!-- GRAPH NODES & TECHNICAL LABELS                                    -->
+    <!-- ================================================================= -->
+    
+    <!-- Node A: (60, 70) [Input: Algorithms] -->
+    <g transform="translate(60, 70)">
+      <circle cx="0" cy="0" r="5" fill="#0B1324" stroke="#38BDF8" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="2" fill="#38BDF8" />
+      <text x="-12" y="-12" class="graph-meta">λ.ALGO [C++]</text>
+    </g>
+
+    <!-- Node B: (60, 210) [Input: Data / Reasoning] -->
+    <g transform="translate(60, 210)">
+      <circle cx="0" cy="0" r="5" fill="#0B1324" stroke="#818CF8" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="2" fill="#818CF8" />
+      <text x="-12" y="18" class="graph-meta">TENSOR.IN [AI]</text>
+    </g>
+
+    <!-- Node C: (110, 140) [Intermediate: Optimization] -->
+    <g transform="translate(110, 140)">
+      <circle cx="0" cy="0" r="4" fill="#0B1324" stroke="#475569" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="#94A3B8" />
+      <text x="-24" y="-10" class="graph-meta">O(V+E)</text>
+    </g>
+
+    <!-- CENTRAL NEXUS NODE: (210, 140) [Synthesis & Model Core] -->
+    <g transform="translate(210, 140)">
+      <!-- Outer Breathing Aura -->
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="10;22;10" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;0.05;0.6" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <!-- Mid Glowing Ring -->
+      <circle cx="0" cy="0" r="9" fill="#0A192F" stroke="#38BDF8" stroke-width="2" />
+      <!-- Core Luminous Nucleus -->
+      <circle cx="0" cy="0" r="4.5" fill="#38BDF8">
+        <animate attributeName="fill" values="#38BDF8;#818CF8;#38BDF8" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <text x="-28" y="32" class="graph-meta" fill="#38BDF8">NEXUS // MODEL</text>
+    </g>
+
+    <!-- Node E: (310, 70) [Heuristic / Agent] -->
+    <g transform="translate(310, 70)">
+      <circle cx="0" cy="0" r="4" fill="#0B1324" stroke="#475569" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="#94A3B8" />
+      <text x="8" y="-4" class="graph-meta">AGENT.LOOP</text>
+    </g>
+
+    <!-- Node F: (380, 80) [System Architecture] -->
+    <g transform="translate(380, 80)">
+      <circle cx="0" cy="0" r="5" fill="#0B1324" stroke="#38BDF8" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="2" fill="#38BDF8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="12" y="4" class="graph-meta">SYSTEMS</text>
+    </g>
+
+    <!-- Node G: (390, 190) [Open-Source Distributed Core] -->
+    <g transform="translate(390, 190)">
+      <circle cx="0" cy="0" r="5" fill="#0B1324" stroke="#34D399" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="2" fill="#34D399">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <text x="12" y="4" class="graph-meta" fill="#34D399">OSS // PEER</text>
+    </g>
+
+    <!-- Node H: (430, 140) [Telemetry / Deploy] -->
+    <g transform="translate(430, 140)">
+      <circle cx="0" cy="0" r="4" fill="#0B1324" stroke="#818CF8" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="#818CF8" />
+      <text x="8" y="3" class="graph-meta">DISPATCH</text>
+    </g>
+
+    <!-- Telemetry & Coordinate Stamp -->
+    <text x="360" y="266" class="graph-meta" fill="#334155">ARM64 · 28°N 77°E</text>
+  </g>
+
+  <!-- Precision Corner Registration Crosshairs -->
   <path d="M 12 16 L 20 16 M 16 12 L 16 20" stroke="#334155" stroke-width="1" />
-  <path d="M 880 16 L 888 16 M 884 12 L 884 20" stroke="#334155" stroke-width="1" />
-  <path d="M 12 194 L 20 194 M 16 190 L 16 198" stroke="#334155" stroke-width="1" />
-  <path d="M 880 194 L 888 194 M 884 190 L 884 198" stroke="#334155" stroke-width="1" />
+  <path d="M 980 16 L 988 16 M 984 12 L 984 20" stroke="#334155" stroke-width="1" />
+  <path d="M 12 264 L 20 264 M 16 260 L 16 268" stroke="#334155" stroke-width="1" />
+  <path d="M 980 264 L 988 264 M 984 260 L 984 268" stroke="#334155" stroke-width="1" />
 
-  <!-- LEFT COLUMN: Identity & Foundation (x = 44) -->
-  <g transform="translate(44, 0)">
-    <!-- Meta Kicker -->
-    <text x="0" y="44" class="mono-meta">FOLIO // 2026 <tspan fill="#38BDF8">·</tspan> B.TECH AI &amp; ML</text>
-
-    <!-- Name -->
-    <text x="0" y="86" class="name">Nikhil Singh</text>
-
-    <!-- Role Description -->
-    <text x="0" y="116" class="role">AI &amp; ML Student <tspan class="interpunct">·</tspan> Software Developer</text>
-    <text x="0" y="136" class="role">Open-Source Contributor</text>
-
-    <!-- Architectural Badge -->
-    <rect x="0" y="156" width="195" height="24" rx="3" fill="#111827" stroke="#1F2937" stroke-width="1" />
-    <text x="12" y="172" class="table-value-accent">C++ · PYTHON · FULL-STACK</text>
-  </g>
-
-  <!-- CENTRAL VERTICAL DIVISION RULE -->
-  <line x1="385" y1="26" x2="385" y2="184" stroke="#1E293B" stroke-width="1" />
-  <path d="M 381 26 L 389 26 M 385 22 L 385 30" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.8" />
-  <path d="M 381 184 L 389 184 M 385 180 L 385 188" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.8" />
-
-  <!-- RIGHT COLUMN: Mission & Architectural Matrix (x = 422) -->
-  <g transform="translate(422, 0)">
-    <!-- Section Header -->
-    <text x="0" y="44" class="mono-accent">01 / FOCUS &amp; PRACTICE</text>
-
-    <!-- Main Editorial Mission Statement -->
-    <text x="0" y="78" class="statement">Building practical software, solving algorithmic</text>
-    <text x="0" y="102" class="statement">problems, and contributing to open source.</text>
-
-    <!-- Horizontal Structural Separator -->
-    <line x1="0" y1="128" x2="434" y2="128" stroke="#1E293B" stroke-width="1" />
-
-    <!-- Sub-Section Matrix: 2 Columns -->
-    <!-- Col A: Core Disciplines -->
-    <g transform="translate(0, 148)">
-      <text x="0" y="0" class="table-label">CORE DISCIPLINES</text>
-      <text x="0" y="18" class="table-value">Algorithms · Systems · Web Architecture</text>
-    </g>
-
-    <!-- Col B: Active Ecosystems -->
-    <g transform="translate(230, 148)">
-      <text x="0" y="0" class="table-label">ACTIVE ECOSYSTEMS</text>
-      <text x="0" y="18" class="table-value-accent">Gno.land · FreeCAD · Pipedream</text>
-    </g>
-  </g>
+  <!-- Animated Bottom Hairline Shimmer -->
+  <rect x="36" y="278.5" width="928" height="1" fill="url(#shimmerBeam)" />
 </svg>

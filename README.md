@@ -1,9 +1,19 @@
-<a href="https://github.com/nikhil-singh91">
-  <img src="./assets/header-banner.svg" alt="Nikhil Singh — AI & ML Student · Software Developer · Open-Source Contributor" width="100%" />
-</a>
+<div align="center">
+  <a href="https://github.com/nikhil-singh91">
+    <img src="./assets/header-banner.svg" alt="Nikhil Singh — AI & ML Student · Software Developer · Open-Source Contributor" width="100%" />
+  </a>
 
-<br/>
+  <p align="center">
+    <a href="#about"><code>About</code></a> &nbsp;·&nbsp;
+    <a href="#projects"><code>Projects</code></a> &nbsp;·&nbsp;
+    <a href="#stack"><code>Tech Stack</code></a> &nbsp;·&nbsp;
+    <a href="#open-source"><code>Open Source</code></a> &nbsp;·&nbsp;
+    <a href="#analytics"><code>Analytics</code></a> &nbsp;·&nbsp;
+    <a href="#connect"><code>Connect</code></a>
+  </p>
+</div>
 
+<a id="about"></a>
 ## 👨‍💻 About Me
 
 I am a **B.Tech student specializing in Artificial Intelligence & Machine Learning**, focused on building reliable full-stack applications, practicing algorithmic problem-solving, and actively contributing to open-source software.
@@ -22,6 +32,7 @@ I am a **B.Tech student specializing in Artificial Intelligence & Machine Learni
 
 <br/>
 
+<a id="projects"></a>
 ## 🚀 Featured Projects
 
 <table>
@@ -111,6 +122,7 @@ I am a **B.Tech student specializing in Artificial Intelligence & Machine Learni
 
 <br/>
 
+<a id="stack"></a>
 ## 🛠️ Technology Stack
 
 <table width="100%">
@@ -167,6 +179,7 @@ I am a **B.Tech student specializing in Artificial Intelligence & Machine Learni
 
 <br/>
 
+<a id="open-source"></a>
 ## 🌐 Open-Source Contributions
 
 Real pull requests and contributions across external open-source repositories:
@@ -187,6 +200,7 @@ Real pull requests and contributions across external open-source repositories:
 
 <br/>
 
+<a id="analytics"></a>
 ## 📊 GitHub Analytics
 
 <p align="center">
@@ -206,6 +220,7 @@ Real pull requests and contributions across external open-source repositories:
 
 <br/>
 
+<a id="connect"></a>
 ## 📬 Connect With Me
 
 Feel free to connect, collaborate, or discuss software engineering and open-source opportunities:
