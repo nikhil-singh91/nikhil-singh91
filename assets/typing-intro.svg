@@ -1,15 +1,15 @@
-<svg width="100%" height="auto" viewBox="0 0 800 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="40" viewBox="0 0 800 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .terminal-text {
-        font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
-        font-size: 15px;
+        font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
+        font-size: 14.5px;
         font-weight: 500;
         fill: #38BDF8;
       }
       .prompt {
         font-family: monospace;
-        font-size: 15px;
+        font-size: 14.5px;
         font-weight: 700;
         fill: #818CF8;
       }
@@ -19,39 +19,37 @@
     </style>
   </defs>
 
-  <rect width="800" height="45" rx="8" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+  <rect width="800" height="40" rx="7" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- Shell Prompt Icon -->
-  <text x="20" y="28" class="prompt">➜</text>
-  <text x="40" y="28" class="prompt" fill="#A855F7">~</text>
+  <text x="18" y="25" class="prompt">➜</text>
+  <text x="36" y="25" class="prompt" fill="#A855F7">~</text>
 
-  <!-- Animated Texts -->
   <!-- Line 1: Exploring AI/ML & software engineering -->
-  <text x="65" y="28" class="terminal-text" opacity="0">
+  <text x="60" y="25" class="terminal-text" opacity="0">
     Exploring AI/ML &amp; modern software engineering
     <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.05;0.22;0.25;1" dur="12s" repeatCount="indefinite" />
   </text>
 
   <!-- Line 2: Building full-stack web applications -->
-  <text x="65" y="28" class="terminal-text" opacity="0">
+  <text x="60" y="25" class="terminal-text" opacity="0">
     Building full-stack web applications with React &amp; Node.js
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.30;0.47;0.50;1" dur="12s" repeatCount="indefinite" />
   </text>
 
   <!-- Line 3: Practicing DSA & competitive programming -->
-  <text x="65" y="28" class="terminal-text" opacity="0">
+  <text x="60" y="25" class="terminal-text" opacity="0">
     Practicing DSA &amp; algorithmic problem solving in C++
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.50;0.55;0.72;0.75;1" dur="12s" repeatCount="indefinite" />
   </text>
 
   <!-- Line 4: Contributing to open-source ecosystems -->
-  <text x="65" y="28" class="terminal-text" opacity="0">
+  <text x="60" y="25" class="terminal-text" opacity="0">
     Contributing to open-source projects (FreeCAD, Gno, Pipedream)
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.80;0.97;1" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.75;0.80;0.97;1" dur="12s" repeatCount="indefinite" />
   </text>
 
   <!-- Pulsing cursor -->
-  <rect x="580" y="14" width="8" height="18" class="cursor" rx="1">
+  <rect x="580" y="12" width="7" height="16" class="cursor" rx="1">
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
   </rect>
 </svg>
