@@ -1,0 +1,109 @@
+<svg width="100%" height="auto" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A12" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#080D1A" />
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="cyanGlow" cx="15%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="purpleGlow" cx="85%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.6"/>
+      <circle cx="30" cy="0" r="1" fill="#38BDF8" fill-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Container Box with Rounded Corners -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#bgGrad)" stroke="url(#glowBorder)" stroke-width="1.5" />
+  
+  <!-- Subtle Grid Background -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#techGrid)" opacity="0.85" />
+
+  <!-- Atmospheric Glow Overlays -->
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#cyanGlow)" />
+  <rect x="2" y="2" width="896" height="236" rx="16" fill="url(#purpleGlow)" />
+
+  <!-- Top Accent Highlight Bar -->
+  <rect x="18" y="2" width="864" height="3" rx="1.5" fill="url(#accentGrad)" />
+
+  <!-- Top Status Badge -->
+  <g transform="translate(40, 32)">
+    <rect x="0" y="0" width="160" height="26" rx="13" fill="#0F172A" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.6"/>
+    <circle cx="13" cy="13" r="4.5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="25" y="17" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.5">OPEN FOR PROJECTS</text>
+  </g>
+
+  <!-- Secondary Badge: Apple Silicon Environment -->
+  <g transform="translate(685, 32)">
+    <rect x="0" y="0" width="175" height="26" rx="13" fill="#0F172A" stroke="#818CF8" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="14" y="17" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500">⚡ Apple Silicon M2 Lab</text>
+  </g>
+
+  <!-- Main Name Header -->
+  <text x="40" y="105" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="40" font-weight="800" letter-spacing="1.5">
+    NIKHIL SINGH
+  </text>
+
+  <!-- Primary Subtitle / Focus -->
+  <text x="40" y="138" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="16" font-weight="600" letter-spacing="0.3">
+    AI &amp; ML Engineering Student <tspan fill="#38BDF8">|</tspan> Software Developer <tspan fill="#818CF8">|</tspan> Open Source Contributor
+  </text>
+
+  <!-- Tagline -->
+  <text x="40" y="168" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="13.5" font-weight="400">
+    Building useful software, solving algorithmic problems, and contributing to open-source systems.
+  </text>
+
+  <!-- Tech Tags Footer Row -->
+  <g transform="translate(40, 195)">
+    <!-- Tag 1: Python -->
+    <rect x="0" y="0" width="70" height="22" rx="6" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="12" y="15" fill="#38BDF8" font-family="monospace" font-size="10.5" font-weight="600">Python</text>
+
+    <!-- Tag 2: C++ -->
+    <rect x="78" y="0" width="55" height="22" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="92" y="15" fill="#818CF8" font-family="monospace" font-size="10.5" font-weight="600">C++</text>
+
+    <!-- Tag 3: React -->
+    <rect x="141" y="0" width="60" height="22" rx="6" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="153" y="15" fill="#67E8F9" font-family="monospace" font-size="10.5" font-weight="600">React</text>
+
+    <!-- Tag 4: Node.js -->
+    <rect x="209" y="0" width="72" height="22" rx="6" fill="#1E293B" stroke="#4ADE80" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="221" y="15" fill="#4ADE80" font-family="monospace" font-size="10.5" font-weight="600">Node.js</text>
+
+    <!-- Tag 5: MongoDB -->
+    <rect x="289" y="0" width="78" height="22" rx="6" fill="#1E293B" stroke="#34D399" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="301" y="15" fill="#34D399" font-family="monospace" font-size="10.5" font-weight="600">MongoDB</text>
+
+    <!-- Tag 6: AI / ML -->
+    <rect x="375" y="0" width="70" height="22" rx="6" fill="#1E293B" stroke="#C084FC" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="388" y="15" fill="#C084FC" font-family="monospace" font-size="10.5" font-weight="600">AI / ML</text>
+  </g>
+</svg>
