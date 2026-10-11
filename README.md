@@ -1,31 +1,6 @@
-<div align="center">
-
-  <!-- Header Banner -->
-  <a href="https://github.com/nikhil-singh91">
-    <img src="./assets/header-banner.svg" alt="Nikhil Singh — AI & ML Student · Software Developer · Open-Source Contributor" width="100%" />
-  </a>
-
-  <br/><br/>
-
-  <!-- Animated Typing Subtitle -->
-  <a href="https://github.com/nikhil-singh91">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2800&pause=1100&color=38BDF8&background=0B132B00&center=true&vCenter=true&width=680&lines=Exploring+AI%2FML+and+software+engineering;Building+practical+full-stack+applications;Practicing+DSA+and+competitive+programming+in+C%2B%2B;Contributing+to+open-source+projects" alt="Typing Animation" />
-  </a>
-
-  <br/>
-
-  <!-- Compact Anchor Navigation -->
-  <p>
-    <a href="#-about-me"><b>About</b></a> •
-    <a href="#-featured-projects"><b>Projects</b></a> •
-    <a href="#-technology-stack"><b>Tech Stack</b></a> •
-    <a href="#-open-source-contributions"><b>Open Source</b></a> •
-    <a href="#-github-analytics"><b>Analytics</b></a> •
-    <a href="#-connect-with-me"><b>Connect</b></a>
-  </p>
-
-  <img src="./assets/divider.svg" width="100%" alt="Section Divider" />
-</div>
+<a href="https://github.com/nikhil-singh91">
+  <img src="./assets/header-banner.svg" alt="Nikhil Singh — AI & ML Student · Software Developer · Open-Source Contributor" width="100%" />
+</a>
 
 <br/>
 
