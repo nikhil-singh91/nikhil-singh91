@@ -214,11 +214,14 @@ Real pull requests and contributions across external open-source repositories:
 
 ## 📊 GitHub Analytics
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nikhil-singh91&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080C16&title_color=38BDF8&icon_color=818CF8&text_color=94A3B8" height="150" alt="GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikhil-singh91&layout=compact&theme=tokyonight&hide_border=true&bg_color=080C16&title_color=38BDF8&text_color=94A3B8" height="150" alt="Top Languages" />
-</div>
+<p align="center">
+  <a href="https://github.com/nikhil-singh91">
+    <img src="https://github-readme-stats.vercel.app/api?username=nikhil-singh91&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080C16&title_color=38BDF8&icon_color=818CF8&text_color=94A3B8" alt="GitHub Stats" width="49%" />
+  </a>
+  <a href="https://github.com/nikhil-singh91">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikhil-singh91&layout=compact&theme=tokyonight&hide_border=true&bg_color=080C16&title_color=38BDF8&text_color=94A3B8&card_width=467" alt="Top Languages" width="49%" />
+  </a>
+</p>
 
 <br/>
 
@@ -232,35 +235,11 @@ Real pull requests and contributions across external open-source repositories:
 
 Feel free to connect, collaborate, or discuss software engineering and open-source opportunities:
 
-<p align="center">
-  <a href="https://github.com/nikhil-singh91">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/nikhil-singh-645964381/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://codeforces.com/profile/nikhil.singh91">
-    <img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white" alt="Codeforces" />
-  </a>
-  &nbsp;
-  <a href="https://www.codechef.com/users/nik_901">
-    <img src="https://img.shields.io/badge/CodeChef-5B4638?style=flat-square&logo=codechef&logoColor=white" alt="CodeChef" />
-  </a>
-  &nbsp;
-  <a href="mailto:nikhil.singh22july@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+<div align="center">
 
-| Platform | Profile Link | Purpose |
-| :--- | :--- | :--- |
-| **GitHub** | [**github.com/nikhil-singh91**](https://github.com/nikhil-singh91) | Repositories and projects |
-| **LinkedIn** | [**linkedin.com/in/nikhil-singh-645964381**](https://www.linkedin.com/in/nikhil-singh-645964381/) | Professional networking |
-| **Codeforces** | [**codeforces.com/profile/nikhil.singh91**](https://codeforces.com/profile/nikhil.singh91) | Competitive programming |
-| **CodeChef** | [**codechef.com/users/nik_901**](https://www.codechef.com/users/nik_901) | Competitive programming |
-| **Email** | [**nikhil.singh22july@gmail.com**](mailto:nikhil.singh22july@gmail.com) | Contact me directly |
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nikhil-singh91) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikhil-singh-645964381/) &nbsp; [![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/nikhil.singh91) &nbsp; [![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=flat-square&logo=codechef&logoColor=white)](https://www.codechef.com/users/nik_901) &nbsp; [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:nikhil.singh22july@gmail.com)
+
+</div>
 
 <br/>
 
