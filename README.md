@@ -2,7 +2,7 @@
 
   <!-- Header Banner -->
   <a href="https://github.com/nikhil-singh91">
-    <img src="./assets/header-banner.svg" alt="Nikhil Singh - AI & ML Student | Software Developer" width="100%" />
+    <img src="./assets/header-banner.svg" alt="Nikhil Singh — AI & ML Student · Software Developer · Open-Source Contributor" width="100%" />
   </a>
 
   <br/><br/>
